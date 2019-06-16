@@ -14,7 +14,14 @@
   "main": "background.js",
   "dependencies": {
     "core-js": "^2.6.5",
-    "vue": "^2.6.10"
+    "fix-path": "^2.1.0",
+    "iconv-lite": "^0.4.24",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.2",
+    "vue": "^2.6.10",
+    "xterm": "^3.14.2",
+    "xterm-addon-fit": "^0.1.0",
+    "xterm-addon-web-links": "^0.1.0"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.8.0",

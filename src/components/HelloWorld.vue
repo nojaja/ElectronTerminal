@@ -1,6 +1,18 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
+        <TerminalView
+          ref="terminal"
+          :cols="100"
+          :rows="24"
+          auto-size
+          :options="{
+            scrollback: 5000,
+            disableStdin: true,
+            useFlowControl: true
+          }"
+          open-links
+        />
     <p>
       For a guide and recipes on how to configure / customize this project,<br>
       check out the
@@ -31,10 +43,14 @@
 </template>
 
 <script>
+import TerminalView from './TerminalView.vue'
 export default {
   name: 'HelloWorld',
   props: {
     msg: String
+  },
+  components: {
+    TerminalView
   }
 }
 </script>
@@ -56,3 +72,4 @@ a {
   color: #42b983;
 }
 </style>
+
