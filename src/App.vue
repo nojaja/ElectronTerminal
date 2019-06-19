@@ -1,18 +1,40 @@
 <template>
   <div id="app">
-    <!--<img alt="Vue logo" src="./assets/logo.png">-->
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+        <TerminalView
+          ref="terminal"
+          :terminal="terminal"
+          :cols="100"
+          :rows="24"
+          auto-size
+          :options="{
+            scrollback: 5000,
+            disableStdin: true,
+            useFlowControl: true
+          }"
+          open-links
+        />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import TerminalView from './components/TerminalView.vue'
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
-  }
+    TerminalView
+  },
+  data () {
+    return {
+      terminal: {
+        pid: 1,
+        name: 'terminal',
+        cols: 1000,
+        rows: 1000
+      },
+      
+    }
+  },
 }
 </script>
 
@@ -21,8 +43,6 @@ export default {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
