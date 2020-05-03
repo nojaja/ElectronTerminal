@@ -3,11 +3,11 @@ module.exports = {
     electronBuilder: {
       builderOptions: {
         // options placed here will be merged with default configuration and passed to electron-builder
-        "productName": "http-server-ui",
-        "appId": "local.test.app1",
-        "copyright": "Copyright © 2018 ${author}",
+        "productName": "terminal",
+        "appId": "local.terminal.app1",
+        "copyright": "Copyright © 2020 ${author}",
         "mac": {
-        "category": "http-server",
+        "category": "terminal",
         "target": "dmg"
         },
         "dmg": {
@@ -31,7 +31,7 @@ module.exports = {
             }
         },
         "linux": {
-            "category": "http-server"
+            "category": "terminal"
         }
       }
     }
