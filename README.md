@@ -3,6 +3,12 @@
 
 # Electron Terminal
 
+![screenshot](/assets/screenshots/ss01.png)
+
+## Installation
+[v0.0.0](https://github.com/nojaja/ElectronTerminal/releases/tag/v0.0.0)
+
+
 ## Project setup
 ```
 npm install
