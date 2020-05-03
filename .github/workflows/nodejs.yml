@@ -17,7 +17,7 @@ jobs:
 
     strategy:
       matrix:
-        os-set: [{"os": "macos-latest", "param": "electron:build-mac", "ext": "*.dmg" }, {"os": "windows-latest", "param": "electron:build-win", "ext": "*.zip" }]
+        os-set: [{"os": "windows-latest", "param": "electron:build-win", "ext": "*.zip" }]
 
     steps:
     - uses: actions/checkout@v2
