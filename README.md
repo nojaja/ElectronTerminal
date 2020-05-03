@@ -1,4 +1,7 @@
-# terminal
+[![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/nojaja/ElectronTerminal) 
+[![Licence](https://img.shields.io/badge/License-MIT-green.svg?style=flat-square)](LICENSE) 
+
+# Electron Terminal
 
 ## Project setup
 ```
@@ -27,3 +30,14 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+## publish
+```
+git tag v0.0.0
+git push --tags
+```
+start CI ⇒ make release file
+
+## License
+
+Licensed under the [MIT](LICENSE) License.

@@ -1,0 +1,9 @@
+tasks:
+  - init: npm install
+    command: export TZ="Asia/Tokyo"
+    command: eval $(gp env -e) && npm run build
+image:
+  file: .gitpod.Dockerfile
+vscode:
+  extensions:
+    - octref.vetur@0.23.0:TEzauMObB6f3i2JqlvrOpA==

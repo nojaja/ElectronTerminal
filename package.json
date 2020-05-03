@@ -11,6 +11,8 @@
     "postinstall": "electron-builder install-app-deps",
     "postuninstall": "electron-builder install-app-deps"
   },
+  "author": "nojaja",
+  "license": "MIT",
   "main": "background.js",
   "dependencies": {
     "core-js": "^2.6.5",
