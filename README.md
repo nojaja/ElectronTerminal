@@ -28,6 +28,12 @@ npm run test
 npm run lint
 ```
 
+### make package
+```
+npm run electron:build-win
+npm run electron:build-mac
+```
+
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
