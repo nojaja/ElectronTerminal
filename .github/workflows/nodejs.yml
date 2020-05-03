@@ -41,6 +41,6 @@ jobs:
         draft: true
         # アップロード対象となるファイル名
         files: |
-          dist/${{ matrix.os-set.ext }}
+          dist_electron/${{ matrix.os-set.ext }}
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
